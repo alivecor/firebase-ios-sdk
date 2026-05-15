@@ -144,28 +144,28 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      url: "https://github.com/google/promises.git",
+      url: "https://github.com/alivecor/promises.git",
       "2.1.0" ..< "3.0.0"
     ),
     .package(
-      url: "https://github.com/apple/swift-protobuf.git",
+      url: "https://github.com/alivecor/swift-protobuf.git",
       "1.19.0" ..< "2.0.0"
     ),
     googleAppMeasurementDependency(),
     .package(
-      url: "https://github.com/google/GoogleDataTransport.git",
+      url: "https://github.com/alivecor/GoogleDataTransport.git",
       "9.3.0" ..< "10.0.0"
     ),
     .package(
-      url: "https://github.com/google/GoogleUtilities.git",
+      url: "https://github.com/alivecor/GoogleUtilities.git",
       "7.12.1" ..< "8.0.0"
     ),
     .package(
-      url: "https://github.com/google/gtm-session-fetcher.git",
+      url: "https://github.com/alivecor/gtm-session-fetcher.git",
       "2.1.0" ..< "4.0.0"
     ),
     .package(
-      url: "https://github.com/firebase/nanopb.git",
+      url: "https://github.com/alivecor/nanopb.git",
       "2.30909.0" ..< "2.30911.0"
     ),
     abseilDependency(),
@@ -180,7 +180,7 @@ let package = Package(
 //      revision: "c5eeaa6dde7c308a5ce48ae4d4530462dd3a1110"
 //    ),
     .package(
-      url: "https://github.com/firebase/leveldb.git",
+      url: "https://github.com/alivecor/leveldb.git",
       "1.22.2" ..< "1.23.0"
     ),
     .package(
@@ -188,10 +188,10 @@ let package = Package(
       revision: "935e2736044e71e5341663c3cc9a335ba6867a2b"
     ),
     .package(
-      url: "https://github.com/google/interop-ios-for-google-sdks.git",
+      url: "https://github.com/alivecor/interop-ios-for-google-sdks.git",
       "100.0.0" ..< "101.0.0"
     ),
-    .package(url: "https://github.com/google/app-check.git", "10.19.0" ..< "11.0.0"),
+    .package(url: "https://github.com/alivecor/app-check.git", "10.19.0" ..< "11.0.0"),
   ],
   targets: [
     .target(
@@ -1400,7 +1400,7 @@ let package = Package(
 // MARK: - Helper Functions
 
 func googleAppMeasurementDependency() -> Package.Dependency {
-  let appMeasurementURL = "https://github.com/google/GoogleAppMeasurement.git"
+  let appMeasurementURL = "https://github.com/alivecor/GoogleAppMeasurement.git"
 
   // Point SPM CI to the tip of main of https://github.com/google/GoogleAppMeasurement so that the
   // release process can defer publishing the GoogleAppMeasurement tag until after testing.
@@ -1423,7 +1423,7 @@ func abseilDependency() -> Package.Dependency {
     )
   } else {
     packageInfo = (
-      "https://github.com/google/abseil-cpp-binary.git",
+      "https://github.com/alivecor/abseil-cpp-binary.git",
       "1.2024011601.1" ..< "1.2024011700.0"
     )
   }
@@ -1439,7 +1439,7 @@ func grpcDependency() -> Package.Dependency {
   if ProcessInfo.processInfo.environment["FIREBASE_SOURCE_FIRESTORE"] != nil {
     packageInfo = ("https://github.com/grpc/grpc-ios.git", "1.62.3" ..< "1.63.0")
   } else {
-    packageInfo = ("https://github.com/google/grpc-binary.git", "1.62.2" ..< "1.63.0")
+    packageInfo = ("https://github.com/alivecor/grpc-binary.git", "1.62.2" ..< "1.63.0")
   }
 
   return .package(url: packageInfo.url, packageInfo.range)
