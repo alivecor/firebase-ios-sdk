@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'FirebaseSharedSwift'
-  s.version                 = '10.24.0'
+  s.version                 = '10.24.1'
   s.summary                 = 'Shared Swift Extensions for Firebase'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Firebase products. FirebaseSharedSwift is not supported for non-Firebase usage.
   s.authors                 = 'Google, Inc.'
 
   s.source                  = {
-    :git => 'https://github.com/Firebase/firebase-ios-sdk.git',
+    :git => 'https://github.com/alivecor/firebase-ios-sdk.git',
     :tag => 'CocoaPods-' + s.version.to_s
   }
 

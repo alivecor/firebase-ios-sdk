@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FirebaseMessagingInterop'
-  s.version          = '10.24.0'
+  s.version          = '10.24.1'
   s.summary          = 'Interfaces that allow other Firebase SDKs to use Messaging functionality.'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   # NOTE that these should not be used externally, this is for Firebase pods to depend on each
   # other.
   s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
+    :git => 'https://github.com/alivecor/firebase-ios-sdk.git',
     :tag => 'CocoaPods-' + s.version.to_s
   }
   s.social_media_url = 'https://twitter.com/Firebase'

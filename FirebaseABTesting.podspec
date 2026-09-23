@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FirebaseABTesting'
-  s.version          = '10.24.0'
+  s.version          = '10.24.1'
   s.summary          = 'Firebase ABTesting'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ Firebase Cloud Messaging and Firebase Remote Config in your app.
   s.authors          = 'Google, Inc.'
 
   s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
+    :git => 'https://github.com/alivecor/firebase-ios-sdk.git',
     :tag => 'CocoaPods-' + s.version.to_s
   }
 

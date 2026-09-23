@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.authors                 = 'Google, Inc.'
 
   s.source                  = {
-    :git => 'https://github.com/Firebase/firebase-ios-sdk.git',
+    :git => 'https://github.com/alivecor/firebase-ios-sdk.git',
     :tag => 'CocoaPods-' + s.version.to_s
   }
 
