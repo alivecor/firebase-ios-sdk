@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'FirebaseAnalyticsOnDeviceConversion'
-    s.version          = '10.24.0'
+    s.version          = '10.24.1'
     s.summary          = 'On device conversion measurement plugin for FirebaseAnalytics. Not intended for direct use.'
 
     s.description      = <<-DESC
